@@ -1,14 +1,15 @@
-# password-encription
+<?php
+/**
+ * User: sajib
+ * Date: 1/25/16
+ * Time: 5:43 PM
+ *
+ * Note: this class requires 'OpenSSL' PHP extension for random key/string generation on Windows
+ * and for encryption/decryption on all platforms. For the highest security level PHP version >= 5.5.0 is recommended.
+ *
+ */
 
-	Security provides a set of methods to handle common security-related tasks.
-
-	In particular, Security supports the following features:
-
-    Password validation: generatePasswordHash() and validatePassword()
-
-    Note: this class requires 'OpenSSL' PHP extension for random key/string generation on Windows and for encryption/decryption on all platforms. For the highest security level PHP version >= 5.5.0 is recommended.
-
-	require_once 'Security.php';
+    require_once 'Security.php';
 
     $security = new Security();
 
@@ -32,3 +33,5 @@
     }else{
         echo "Invalid Password";
     }
+
+
